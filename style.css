@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    background: #f00;
+    color: #fff;
+}
+
+:root {
+    --primary-color: #f9f9f9;
+    --secondary-color: #222;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .sa-logo {
+    position: relative;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+header .navigation {
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+header .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(#f00, #000);
+    color: #f9f9f9;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .content {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.home .content h3 {
+    font-size: 4.4rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    font-size: 7rem;
+    color: #f00;
+    line-height: 7rem;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: -8rem 5rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    color: #f9f9f9;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+
+}
